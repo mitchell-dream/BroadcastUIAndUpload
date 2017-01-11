@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC2F13741E24D9B3005FBEB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F13731E24D9B3005FBEB6 /* main.m */; };
+		FC2F13771E24D9B3005FBEB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F13761E24D9B3005FBEB6 /* AppDelegate.m */; };
+		FC2F137A1E24D9B3005FBEB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F13791E24D9B3005FBEB6 /* ViewController.m */; };
+		FC2F137D1E24D9B3005FBEB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2F137B1E24D9B3005FBEB6 /* Main.storyboard */; };
+		FC2F137F1E24D9B3005FBEB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2F137E1E24D9B3005FBEB6 /* Assets.xcassets */; };
+		FC2F13821E24D9B3005FBEB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2F13801E24D9B3005FBEB6 /* LaunchScreen.storyboard */; };
+		FC2F13901E24DA0B005FBEB6 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2F138F1E24DA0B005FBEB6 /* ReplayKit.framework */; };
+		FC2F13921E24DA0B005FBEB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2F13911E24DA0B005FBEB6 /* UIKit.framework */; };
+		FC2F13961E24DA0B005FBEB6 /* BroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F13951E24DA0B005FBEB6 /* BroadcastViewController.m */; };
+		FC2F13991E24DA0B005FBEB6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2F13971E24DA0B005FBEB6 /* MainInterface.storyboard */; };
+		FC2F139D1E24DA0B005FBEB6 /* ReplayUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC2F138D1E24DA0A005FBEB6 /* ReplayUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC2F13A71E24EE65005FBEB6 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2F138F1E24DA0B005FBEB6 /* ReplayKit.framework */; };
+		FC2F13AB1E24EE65005FBEB6 /* MovieClipHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F13AA1E24EE65005FBEB6 /* MovieClipHandler.m */; };
+		FC2F13AE1E24EE65005FBEB6 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F13AD1E24EE65005FBEB6 /* SampleHandler.m */; };
+		FC2F13C41E24EE65005FBEB6 /* ReplayKitUpload.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC2F13A61E24EE65005FBEB6 /* ReplayKitUpload.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC2F13D31E251C33005FBEB6 /* ReplayKitUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2F13D21E251C33005FBEB6 /* ReplayKitUploader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC2F139B1E24DA0B005FBEB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2F13671E24D9B3005FBEB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC2F138C1E24DA0A005FBEB6;
+			remoteInfo = ReplayUI;
+		};
+		FC2F13C21E24EE65005FBEB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2F13671E24D9B3005FBEB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC2F13A51E24EE65005FBEB6;
+			remoteInfo = ReplayKitUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC2F13A11E24DA0B005FBEB6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC2F139D1E24DA0B005FBEB6 /* ReplayUI.appex in Embed App Extensions */,
+				FC2F13C41E24EE65005FBEB6 /* ReplayKitUpload.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC2F136F1E24D9B3005FBEB6 /* ReplayKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplayKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2F13731E24D9B3005FBEB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC2F13751E24D9B3005FBEB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC2F13761E24D9B3005FBEB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC2F13781E24D9B3005FBEB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC2F13791E24D9B3005FBEB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC2F137C1E24D9B3005FBEB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC2F137E1E24D9B3005FBEB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC2F13811E24D9B3005FBEB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC2F13831E24D9B3005FBEB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2F138D1E24DA0A005FBEB6 /* ReplayUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReplayUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2F138F1E24DA0B005FBEB6 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		FC2F13911E24DA0B005FBEB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC2F13941E24DA0B005FBEB6 /* BroadcastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastViewController.h; sourceTree = "<group>"; };
+		FC2F13951E24DA0B005FBEB6 /* BroadcastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastViewController.m; sourceTree = "<group>"; };
+		FC2F13981E24DA0B005FBEB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FC2F139A1E24DA0B005FBEB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2F13A61E24EE65005FBEB6 /* ReplayKitUpload.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReplayKitUpload.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2F13A91E24EE65005FBEB6 /* MovieClipHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieClipHandler.h; sourceTree = "<group>"; };
+		FC2F13AA1E24EE65005FBEB6 /* MovieClipHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieClipHandler.m; sourceTree = "<group>"; };
+		FC2F13AC1E24EE65005FBEB6 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		FC2F13AD1E24EE65005FBEB6 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		FC2F13AF1E24EE65005FBEB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2F13D11E251C33005FBEB6 /* ReplayKitUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplayKitUploader.h; sourceTree = "<group>"; };
+		FC2F13D21E251C33005FBEB6 /* ReplayKitUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplayKitUploader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC2F136C1E24D9B3005FBEB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2F138A1E24DA0A005FBEB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2F13901E24DA0B005FBEB6 /* ReplayKit.framework in Frameworks */,
+				FC2F13921E24DA0B005FBEB6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2F13A31E24EE65005FBEB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2F13A71E24EE65005FBEB6 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC2F13661E24D9B3005FBEB6 = {
+			isa = PBXGroup;
+			children = (
+				FC2F13711E24D9B3005FBEB6 /* ReplayKitDemo */,
+				FC2F13931E24DA0B005FBEB6 /* ReplayUI */,
+				FC2F13A81E24EE65005FBEB6 /* ReplayKitUpload */,
+				FC2F138E1E24DA0B005FBEB6 /* Frameworks */,
+				FC2F13701E24D9B3005FBEB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC2F13701E24D9B3005FBEB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F136F1E24D9B3005FBEB6 /* ReplayKitDemo.app */,
+				FC2F138D1E24DA0A005FBEB6 /* ReplayUI.appex */,
+				FC2F13A61E24EE65005FBEB6 /* ReplayKitUpload.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC2F13711E24D9B3005FBEB6 /* ReplayKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F13751E24D9B3005FBEB6 /* AppDelegate.h */,
+				FC2F13761E24D9B3005FBEB6 /* AppDelegate.m */,
+				FC2F13781E24D9B3005FBEB6 /* ViewController.h */,
+				FC2F13791E24D9B3005FBEB6 /* ViewController.m */,
+				FC2F137B1E24D9B3005FBEB6 /* Main.storyboard */,
+				FC2F137E1E24D9B3005FBEB6 /* Assets.xcassets */,
+				FC2F13801E24D9B3005FBEB6 /* LaunchScreen.storyboard */,
+				FC2F13831E24D9B3005FBEB6 /* Info.plist */,
+				FC2F13721E24D9B3005FBEB6 /* Supporting Files */,
+			);
+			path = ReplayKitDemo;
+			sourceTree = "<group>";
+		};
+		FC2F13721E24D9B3005FBEB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F13731E24D9B3005FBEB6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC2F138E1E24DA0B005FBEB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F138F1E24DA0B005FBEB6 /* ReplayKit.framework */,
+				FC2F13911E24DA0B005FBEB6 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC2F13931E24DA0B005FBEB6 /* ReplayUI */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F13941E24DA0B005FBEB6 /* BroadcastViewController.h */,
+				FC2F13951E24DA0B005FBEB6 /* BroadcastViewController.m */,
+				FC2F13971E24DA0B005FBEB6 /* MainInterface.storyboard */,
+				FC2F139A1E24DA0B005FBEB6 /* Info.plist */,
+			);
+			path = ReplayUI;
+			sourceTree = "<group>";
+		};
+		FC2F13A81E24EE65005FBEB6 /* ReplayKitUpload */ = {
+			isa = PBXGroup;
+			children = (
+				FC2F13D11E251C33005FBEB6 /* ReplayKitUploader.h */,
+				FC2F13D21E251C33005FBEB6 /* ReplayKitUploader.m */,
+				FC2F13A91E24EE65005FBEB6 /* MovieClipHandler.h */,
+				FC2F13AA1E24EE65005FBEB6 /* MovieClipHandler.m */,
+				FC2F13AC1E24EE65005FBEB6 /* SampleHandler.h */,
+				FC2F13AD1E24EE65005FBEB6 /* SampleHandler.m */,
+				FC2F13AF1E24EE65005FBEB6 /* Info.plist */,
+			);
+			path = ReplayKitUpload;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC2F136E1E24D9B3005FBEB6 /* ReplayKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2F13861E24D9B3005FBEB6 /* Build configuration list for PBXNativeTarget "ReplayKitDemo" */;
+			buildPhases = (
+				FC2F136B1E24D9B3005FBEB6 /* Sources */,
+				FC2F136C1E24D9B3005FBEB6 /* Frameworks */,
+				FC2F136D1E24D9B3005FBEB6 /* Resources */,
+				FC2F13A11E24DA0B005FBEB6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC2F139C1E24DA0B005FBEB6 /* PBXTargetDependency */,
+				FC2F13C31E24EE65005FBEB6 /* PBXTargetDependency */,
+			);
+			name = ReplayKitDemo;
+			productName = ReplayKitDemo;
+			productReference = FC2F136F1E24D9B3005FBEB6 /* ReplayKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC2F138C1E24DA0A005FBEB6 /* ReplayUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2F139E1E24DA0B005FBEB6 /* Build configuration list for PBXNativeTarget "ReplayUI" */;
+			buildPhases = (
+				FC2F13891E24DA0A005FBEB6 /* Sources */,
+				FC2F138A1E24DA0A005FBEB6 /* Frameworks */,
+				FC2F138B1E24DA0A005FBEB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReplayUI;
+			productName = ReplayUI;
+			productReference = FC2F138D1E24DA0A005FBEB6 /* ReplayUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FC2F13A51E24EE65005FBEB6 /* ReplayKitUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2F13C81E24EE65005FBEB6 /* Build configuration list for PBXNativeTarget "ReplayKitUpload" */;
+			buildPhases = (
+				FC2F13A21E24EE65005FBEB6 /* Sources */,
+				FC2F13A31E24EE65005FBEB6 /* Frameworks */,
+				FC2F13A41E24EE65005FBEB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReplayKitUpload;
+			productName = ReplayKitUpload;
+			productReference = FC2F13A61E24EE65005FBEB6 /* ReplayKitUpload.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC2F13671E24D9B3005FBEB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MENGCHEN;
+				TargetAttributes = {
+					FC2F136E1E24D9B3005FBEB6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T43EX2XKU3;
+						ProvisioningStyle = Automatic;
+					};
+					FC2F138C1E24DA0A005FBEB6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T43EX2XKU3;
+						ProvisioningStyle = Automatic;
+					};
+					FC2F13A51E24EE65005FBEB6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T43EX2XKU3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC2F136A1E24D9B3005FBEB6 /* Build configuration list for PBXProject "ReplayKitDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC2F13661E24D9B3005FBEB6;
+			productRefGroup = FC2F13701E24D9B3005FBEB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC2F136E1E24D9B3005FBEB6 /* ReplayKitDemo */,
+				FC2F138C1E24DA0A005FBEB6 /* ReplayUI */,
+				FC2F13A51E24EE65005FBEB6 /* ReplayKitUpload */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC2F136D1E24D9B3005FBEB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2F13821E24D9B3005FBEB6 /* LaunchScreen.storyboard in Resources */,
+				FC2F137F1E24D9B3005FBEB6 /* Assets.xcassets in Resources */,
+				FC2F137D1E24D9B3005FBEB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2F138B1E24DA0A005FBEB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2F13991E24DA0B005FBEB6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2F13A41E24EE65005FBEB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC2F136B1E24D9B3005FBEB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2F137A1E24D9B3005FBEB6 /* ViewController.m in Sources */,
+				FC2F13771E24D9B3005FBEB6 /* AppDelegate.m in Sources */,
+				FC2F13741E24D9B3005FBEB6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2F13891E24DA0A005FBEB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2F13961E24DA0B005FBEB6 /* BroadcastViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2F13A21E24EE65005FBEB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2F13AE1E24EE65005FBEB6 /* SampleHandler.m in Sources */,
+				FC2F13AB1E24EE65005FBEB6 /* MovieClipHandler.m in Sources */,
+				FC2F13D31E251C33005FBEB6 /* ReplayKitUploader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC2F139C1E24DA0B005FBEB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC2F138C1E24DA0A005FBEB6 /* ReplayUI */;
+			targetProxy = FC2F139B1E24DA0B005FBEB6 /* PBXContainerItemProxy */;
+		};
+		FC2F13C31E24EE65005FBEB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC2F13A51E24EE65005FBEB6 /* ReplayKitUpload */;
+			targetProxy = FC2F13C21E24EE65005FBEB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC2F137B1E24D9B3005FBEB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC2F137C1E24D9B3005FBEB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC2F13801E24D9B3005FBEB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC2F13811E24D9B3005FBEB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FC2F13971E24DA0B005FBEB6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC2F13981E24DA0B005FBEB6 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC2F13841E24D9B3005FBEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC2F13851E24D9B3005FBEB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC2F13871E24D9B3005FBEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = ReplayKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mcking.ReplayKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC2F13881E24D9B3005FBEB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = ReplayKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mcking.ReplayKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC2F139F1E24DA0B005FBEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = ReplayUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mcking.ReplayKitDemo.ReplayUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC2F13A01E24DA0B005FBEB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = ReplayUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mcking.ReplayKitDemo.ReplayUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FC2F13C91E24EE65005FBEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = ReplayKitUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mcking.ReplayKitDemo.ReplayKitUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC2F13CA1E24EE65005FBEB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = ReplayKitUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mcking.ReplayKitDemo.ReplayKitUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC2F136A1E24D9B3005FBEB6 /* Build configuration list for PBXProject "ReplayKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2F13841E24D9B3005FBEB6 /* Debug */,
+				FC2F13851E24D9B3005FBEB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2F13861E24D9B3005FBEB6 /* Build configuration list for PBXNativeTarget "ReplayKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2F13871E24D9B3005FBEB6 /* Debug */,
+				FC2F13881E24D9B3005FBEB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC2F139E1E24DA0B005FBEB6 /* Build configuration list for PBXNativeTarget "ReplayUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2F139F1E24DA0B005FBEB6 /* Debug */,
+				FC2F13A01E24DA0B005FBEB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC2F13C81E24EE65005FBEB6 /* Build configuration list for PBXNativeTarget "ReplayKitUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2F13C91E24EE65005FBEB6 /* Debug */,
+				FC2F13CA1E24EE65005FBEB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC2F13671E24D9B3005FBEB6 /* Project object */;
+}

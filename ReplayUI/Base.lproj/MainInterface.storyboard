@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Broadcast View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="BroadcastViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="accout" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dku-qh-l5z">
+                                <rect key="frame" x="10" y="10" width="300" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="hFf-Ei-YQX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="secret" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8bV-gI-ZJw">
+                                <rect key="frame" x="10" y="40" width="300" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="sfv-ps-4kM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="channel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewh-f0-X4X">
+                                <rect key="frame" x="10" y="70" width="300" height="20"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNs-s4-Q3l">
+                                <rect key="frame" x="16" y="112" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelClick:" destination="ObA-dk-sSI" eventType="touchUpInside" id="vR7-kT-RvP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNU-xs-gPq">
+                                <rect key="frame" x="274" y="112" width="30" height="30"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="okClick:" destination="ObA-dk-sSI" eventType="touchUpInside" id="VuH-cy-Uem"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="VNs-s4-Q3l" secondAttribute="bottom" constant="8" symbolic="YES" id="5Q5-2L-kwT"/>
+                            <constraint firstItem="VNs-s4-Q3l" firstAttribute="top" secondItem="ewh-f0-X4X" secondAttribute="bottom" constant="22" id="9Yd-Ni-gSt"/>
+                            <constraint firstItem="ewh-f0-X4X" firstAttribute="top" secondItem="8bV-gI-ZJw" secondAttribute="bottom" constant="10" id="B6T-HH-OkJ"/>
+                            <constraint firstItem="VNs-s4-Q3l" firstAttribute="top" secondItem="MNU-xs-gPq" secondAttribute="top" id="MQu-8b-7Gi"/>
+                            <constraint firstItem="VNs-s4-Q3l" firstAttribute="baseline" secondItem="MNU-xs-gPq" secondAttribute="baseline" id="O6H-Fj-izM"/>
+                            <constraint firstItem="Dku-qh-l5z" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="topMargin" constant="10" id="PwN-J0-THA"/>
+                            <constraint firstItem="Dku-qh-l5z" firstAttribute="leading" secondItem="8bV-gI-ZJw" secondAttribute="leading" id="QJv-fh-YVX"/>
+                            <constraint firstItem="8bV-gI-ZJw" firstAttribute="leading" secondItem="ewh-f0-X4X" secondAttribute="leading" id="Yc2-Ur-IPe"/>
+                            <constraint firstItem="MNU-xs-gPq" firstAttribute="trailing" secondItem="zMn-AG-sqS" secondAttribute="trailingMargin" id="dPH-ts-nib"/>
+                            <constraint firstItem="Dku-qh-l5z" firstAttribute="trailing" secondItem="8bV-gI-ZJw" secondAttribute="trailing" id="fZ0-CK-Uld"/>
+                            <constraint firstItem="8bV-gI-ZJw" firstAttribute="trailing" secondItem="ewh-f0-X4X" secondAttribute="trailing" id="r4e-fG-fjK"/>
+                            <constraint firstItem="Dku-qh-l5z" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="-6" id="tzp-Zu-53S"/>
+                            <constraint firstItem="8bV-gI-ZJw" firstAttribute="top" secondItem="Dku-qh-l5z" secondAttribute="bottom" constant="10" id="u7F-HH-Nk4"/>
+                            <constraint firstItem="VNs-s4-Q3l" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" id="voc-jb-bCt"/>
+                            <constraint firstItem="Dku-qh-l5z" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="wwV-wT-iqa"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
